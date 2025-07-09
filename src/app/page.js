@@ -34,7 +34,7 @@ export default function Home() {
           {/* Content overlay */}
           <div className="form-content">
             <h1 className="form-title">
-              "Latehar Ka Apna Delivery App!"
+              "Latehar Ka Apna Delivery App!" 
             </h1>
             
             <div className="form-buttons">
