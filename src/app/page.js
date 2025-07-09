@@ -79,6 +79,8 @@ export default function Home() {
               </div>
             </Link>
 
+            
+
             {/* Orders */}
             <Link href="/orders" className="group">
               <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-100 hover:shadow-lg transition-shadow">
