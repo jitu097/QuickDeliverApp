@@ -5,9 +5,46 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* Custom Logo Animation */
+.logo-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo-scooter {
+  position: absolute;
+  left: -400px; /* Start off-screen */
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.animate-driveIn {
+  animation: driveIn 1s ease-out forwards;
+}
+
+
+/* Text specific animation */
+h1 {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 350px;
+  
+  z-index: 0;
+}
+
+@keyframes driveIn {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 2px;
+  }
 }
 
 ::-webkit-scrollbar-track {
