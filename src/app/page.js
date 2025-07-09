@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -10,6 +11,7 @@ export default function Home() {
     // Show login page after animation completes (1s animation + 1s delay)
     const timer = setTimeout(() => {
       setShowLoginPage(true);
+
     }, 1000);
 
     return () => clearTimeout(timer);
